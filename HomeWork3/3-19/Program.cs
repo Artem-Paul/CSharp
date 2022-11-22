@@ -16,11 +16,11 @@ if (num1 > 9999 && num1 < 100000)
     int num5 = num1 / 1000 % 10;
     if (num2 == num3 && num4 == num5)
     {
-       Console.WriteLine("Это число палиндром"); 
+        Console.WriteLine("Это число палиндром"); 
     }
     else 
     {
-            Console.WriteLine("Это число не палиндром");
+        Console.WriteLine("Это число не палиндром");
     } 
 }
 else
