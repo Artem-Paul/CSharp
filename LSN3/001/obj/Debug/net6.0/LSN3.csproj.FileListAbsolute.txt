@@ -1,0 +1,15 @@
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\LSN3.csproj.AssemblyReference.cache
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\LSN3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\LSN3.AssemblyInfoInputs.cache
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\LSN3.AssemblyInfo.cs
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\LSN3.csproj.CoreCompileInputs.cache
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\bin\Debug\net6.0\LSN3.exe
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\bin\Debug\net6.0\LSN3.deps.json
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\bin\Debug\net6.0\LSN3.runtimeconfig.json
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\bin\Debug\net6.0\LSN3.dll
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\bin\Debug\net6.0\LSN3.pdb
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\LSN3.dll
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\refint\LSN3.dll
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\LSN3.pdb
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\LSN3.genruntimeconfig.cache
+C:\Users\Artuo\OneDrive\Desktop\GIT\C#\LSN3\obj\Debug\net6.0\ref\LSN3.dll
