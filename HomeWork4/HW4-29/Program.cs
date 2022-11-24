@@ -3,13 +3,14 @@
 // 6, 1, 33 -> [6, 1, 33]
 
 
-int[] array = new int[8];
+//int[] array = new int[8];
 // PrintArray(array);
 Console.WriteLine("Введите количество элементов в массиве, например 8: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 var arr = FillArray(num);       //почему когда вместо var прописываешь int, 
-                               //вылетает "Не удается неявно преобразовать тип "int[]" в "int""
+                               //вылетает "Не удается неявно преобразовать тип "int[]" в "int",  массив ведь
+                               // из целых чисел"?
 PrintArray(arr);
 
 int[] FillArray(int length)
