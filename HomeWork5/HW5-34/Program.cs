@@ -25,8 +25,6 @@ int evenNum(int [] array)          // метод нахождения колич
 }
 
 
-
-
 int[] FillArray(int length)           // метод заполнить массив
 {
     int [] array = new int [length];
