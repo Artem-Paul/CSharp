@@ -13,8 +13,7 @@ Console.WriteLine("Макс элемент массива: " + MaxNum(array));
 Console.Write("Разница между макс и мин элементов: ");
 Console.WriteLine(MaxNum(array) - MinNum(array));
 
-
-int MinNum (int[] array)             // Метод минимальный элемент массива
+int MinNum (int[] array)             // метод минимальный элемент массива
 {    
     int imin = 0;
     for (int i = 0; i < array.Length; i++)
@@ -24,10 +23,10 @@ int MinNum (int[] array)             // Метод минимальный эле
             imin = i;
         }
     }
-     return array[imin];             // 
+     return array[imin];             // return выводит зачение которое получил метод
 }
 
-int MaxNum (int[] array)             // Метод максимальный элемент массива
+int MaxNum (int[] array)             // метод максимальный элемент массива
 {    
     int imax = 0;
     for (int i = 0; i < array.Length; i++)
