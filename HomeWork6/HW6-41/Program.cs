@@ -24,7 +24,7 @@ int positivNum(int[] array)
     return count;
 }
 
-int[] FillArray(int length)           // метод заполнить массив
+int[] FillArray(int length)           
 {
     int[] array = new int[length];
     for (int i = 0; i < length; i++)
@@ -34,7 +34,7 @@ int[] FillArray(int length)           // метод заполнить масс�
     return array;
 }
 
-void Print(int[] array)              // метод напечатать массив
+void Print(int[] array)              
 {
     foreach (var item in array)
     {
