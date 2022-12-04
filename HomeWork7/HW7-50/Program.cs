@@ -6,7 +6,7 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-int[,] arr = new int[3, 4];
+int[,] arr = new int[4, 4];
 Random random = new Random();
 Print(FillArray(arr));
 
@@ -16,25 +16,21 @@ Console.WriteLine("Введите номер столбца: ");
 int numj = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(SearchNum(arr));
 
-// var num = SearchNum(arr);
-
-
 int[,] SearchNum(int[,] arr)
 {
-    for (int i = 0; i < arr.GetLength(0); i++)
+    if (numi >= arr.GetLength(0))
     {
-        if (i >= arr.GetLength(0))
-        {
-            Console.WriteLine("Строка отсутвует в массиве!");
-        }
-        for (int j = 0; j < arr.GetLength(1); j++)
-        {
-            if (j >= arr.GetLength(0))
-            {
-                Console.WriteLine("Столбец отсутвует в массиве!");
-            }
-        }
+        Console.WriteLine("Строка отсутвует в массиве!");
     }
+    if (numj >= arr.GetLength(1))
+    {
+        Console.WriteLine("Столбец отсутвует в массиве!");
+    }
+    else
+    {
+        Console.WriteLine($"Число на этой позиции: {arr[numi, numj]}");
+    }
+
     return arr;
 }
 
