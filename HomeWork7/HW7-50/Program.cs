@@ -14,7 +14,7 @@ Console.WriteLine("Введите номер строки: ");
 int numi = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите номер столбца: ");
 int numj = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(SearchNum(arr));
+Console.WriteLine(SearchNum (arr));
 
 int[,] SearchNum(int[,] arr)
 {
