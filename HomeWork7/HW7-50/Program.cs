@@ -6,7 +6,7 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-int[,] arr = new int[4, 4];
+int[,] arr = new int[3, 4];
 Random random = new Random();
 Print(FillArray(arr));
 
