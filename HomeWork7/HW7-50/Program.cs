@@ -9,15 +9,14 @@
 int[,] arr = new int[3, 4];
 Random random = new Random();
 Print(FillArray(arr));
-
-Console.Write("Введите номер строки: ");
-int numi = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите номер столбца: ");
-int numj = Convert.ToInt32(Console.ReadLine());
 SearchNum(arr);
 
 int[,] SearchNum(int[,] arr)
 {
+    Console.Write("Введите номер строки: ");
+    int numi = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите номер столбца: ");
+    int numj = Convert.ToInt32(Console.ReadLine());
     if (numi >= arr.GetLength(0))
     {
         Console.WriteLine("Строка отсутвует в массиве!");
