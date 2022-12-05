@@ -17,14 +17,14 @@ int positivNum(int[] array)
     {
         if (array[i] > 0)
         {
-            count = count + 1;
+            count += 1;
         }
     }
 
     return count;
 }
 
-int[] FillArray(int length)           
+int[] FillArray(int length)
 {
     int[] array = new int[length];
     for (int i = 0; i < length; i++)
@@ -34,7 +34,7 @@ int[] FillArray(int length)
     return array;
 }
 
-void Print(int[] array)              
+void Print(int[] array)
 {
     foreach (var item in array)
     {
