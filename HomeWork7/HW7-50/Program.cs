@@ -14,7 +14,7 @@ Console.Write("Введите номер строки: ");
 int numi = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите номер столбца: ");
 int numj = Convert.ToInt32(Console.ReadLine());
-SearchNum (arr);
+SearchNum(arr);
 
 int[,] SearchNum(int[,] arr)
 {
@@ -43,7 +43,7 @@ int[,] FillArray(int[,] arr)
             arr[i, j] = random.Next(0, 100);
         }
     }
-    
+
     return arr;
 }
 
