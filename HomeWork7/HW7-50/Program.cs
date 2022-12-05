@@ -10,9 +10,9 @@ int[,] arr = new int[3, 4];
 Random random = new Random();
 Print(FillArray(arr));
 
-Console.WriteLine("Введите номер строки: ");
+Console.Write("Введите номер строки: ");
 int numi = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите номер столбца: ");
+Console.Write("Введите номер столбца: ");
 int numj = Convert.ToInt32(Console.ReadLine());
 SearchNum (arr);
 
@@ -43,6 +43,7 @@ int[,] FillArray(int[,] arr)
             arr[i, j] = random.Next(0, 100);
         }
     }
+    
     return arr;
 }
 
