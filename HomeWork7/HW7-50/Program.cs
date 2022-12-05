@@ -6,18 +6,18 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-int[,] arr = new int[3, 4];
+int[,] arr = new int[15, 20];
 Random random = new Random();
 Print(FillArray(arr));
 
-Console.Write("Введите номер строки: ");
-int numi = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите номер столбца: ");
-int numj = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите номер строки: ");
+// int numi = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите номер столбца: ");
+// int numj = Convert.ToInt32(Console.ReadLine());
 
-SearchNum(arr);
+SearchNum(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
 
-int[,] SearchNum(int[,] arr)
+int[,] SearchNum(int numi, int numj)
 {
     if (numi >= arr.GetLength(0))
     {
