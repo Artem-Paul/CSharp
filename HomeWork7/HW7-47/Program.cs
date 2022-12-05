@@ -19,9 +19,10 @@ double[,] FillArray(double[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i,j] = random.Next(-999, 1000) / 10.0;    
+            arr[i, j] = random.Next(-999, 1000) / 10.0;
         }
     }
+
     return arr;
 }
 
