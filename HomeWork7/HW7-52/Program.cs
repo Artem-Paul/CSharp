@@ -9,13 +9,12 @@
 int[,] arr = new int[3, 4];
 Random random = new Random();
 Print(FillArray(arr));
-
 AverageColumn(arr);
 
 void AverageColumn(int[,] arr)
 {
-    for (int j = 0; j < arr.GetLength(1); j++) 
-    {   
+    for (int j = 0; j < arr.GetLength(1); j++)
+    {
         double sumColumn = 0;
         for (int i = 0; i < arr.GetLength(0); i++)
         {
@@ -24,7 +23,7 @@ void AverageColumn(int[,] arr)
         double result = sumColumn / arr.GetLength(0);
         Console.WriteLine($"Среднее арифметичесое столбца {j} = {result}");
     }
- 
+
 }
 
 int[,] FillArray(int[,] arr)
