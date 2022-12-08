@@ -9,9 +9,11 @@
 // 9 5 3 2            GetLenght  0 строка, 1 столбец
 // 8 4 4 2
 
-var matrix = FillMatrix(3, 4);
+var matrix = FillMatrix(3, 9);
 PrintMatrix(matrix);
 DecreasingRow(matrix);
+System.Console.WriteLine("Упорядоточен по убыванию:");
+PrintMatrix(matrix);
 
 void DecreasingRow(int[,] matrix)
 {
@@ -19,11 +21,15 @@ void DecreasingRow(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            int max = matrix[i, j];
-            int column = j + 1;
-            if (matrix[i, column] > matrix[i, j])
+            for (int k = 0; k < matrix.GetLength(1)-1; k++)
             {
-                max = matrix[i, column];
+                int column = k + 1;
+                if (matrix[i, column] > matrix[i, k])
+                {
+                    int temp = matrix[i, column];
+                    matrix[i, column] = matrix[i, k];
+                    matrix[i, k] = temp;
+                }
             }
         }
     }
@@ -37,7 +43,7 @@ int[,] FillMatrix(int rows, int colums)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = rnd.Next(1, 6);
+            matrix[i, j] = rnd.Next(1, 10);
         }
     }
     return matrix;
