@@ -49,7 +49,6 @@ int[,] FillMatrix(int rows, int colums)
     return matrix;
 }
 
-
 void PrintMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
