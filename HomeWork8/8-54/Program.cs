@@ -21,7 +21,7 @@ void DecreasingRow(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            for (int k = 0; k < matrix.GetLength(1)-1; k++)
+            for (int k = 0; k < matrix.GetLength(1) - 1; k++)
             {
                 int column = k + 1;
                 if (matrix[i, column] > matrix[i, k])
