@@ -9,32 +9,36 @@
 
 var matrix = FillMatrix(4, 4);
 int[] sumRowArr = new int[matrix.GetLength(0)];
-PrintMatrix(matrix);
-SumRows(matrix);
-// MinRow(sumRowArr);
-
-int[,] SumRows(int[,] matrix)
+PrintMatrix(matrix);                                  // В этом 8м дз, данная задача оказалось самой сложной. 
+SumRows(matrix);                                      // Не знаю почему, но возникла сложность с поиском наименьшей      
+// MinRow(sumRowArr);                                 // суммы строки при помощи дополнительного метода, я пытался              
+                                                      // создать одномерный массив, но так ничего и
+int[,] SumRows(int[,] matrix)                         // заработало. Где можно почитать о методах доп. инфу?
 {
-    int[] sumRowArr = new int[matrix.GetLength(0)];
     int iMin = 0;
-    int sum = 0;
+    int sumMin = 0;
+    // int[] sumRow = new int[matrix.GetLength(0)];
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         int sumRow = 0;
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             sumRow += matrix[i, j];
-            sum = sumRowArr[0];
-            if (sumRowArr[i] < sumRow)
-            {
-                sum = sumRowArr[i];
-                iMin = i;
-            }
         }
-        Console.WriteLine($"Сумма элементов строки {i}= {sumRow}");
+        if (i == 0)
+        {
+            sumMin = sumRow;
+            iMin = i;
+        }
+        if (sumMin > sumRow)
+        {
+            sumMin = sumRow;
+            iMin = i;
+        }
 
+        Console.WriteLine($"Сумма элементов строки {i}= {sumRow}");
     }
-    System.Console.WriteLine($"мин {iMin} + {sum}");
+    System.Console.WriteLine($"Наименьшая сумма элементов на строке: {iMin}");
 
     return matrix;
 }
@@ -67,6 +71,7 @@ int[,] FillMatrix(int rows, int colums)
             matrix[i, j] = rnd.Next(1, 10);
         }
     }
+
     return matrix;
 }
 
