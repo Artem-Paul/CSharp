@@ -8,46 +8,53 @@
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
 var matrix = FillMatrix(4, 4);
+int[] sumRowArr = new int[matrix.GetLength(0)];
 PrintMatrix(matrix);
 SumRows(matrix);
+// MinRow(sumRowArr);
 
 int[,] SumRows(int[,] matrix)
 {
     int[] sumRowArr = new int[matrix.GetLength(0)];
-    int indexMinSum = 0;
+    int iMin = 0;
+    int sum = 0;
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         int sumRow = 0;
-        int minSum = 0;        
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             sumRow += matrix[i, j];
-            sumRowArr[i] = sumRow;
+            sum = sumRowArr[0];
             if (sumRowArr[i] < sumRow)
             {
-                minSum = sumRowArr[i];
-                indexMinSum = i;
+                sum = sumRowArr[i];
+                iMin = i;
             }
         }
         Console.WriteLine($"Сумма элементов строки {i}= {sumRow}");
+
     }
-    Console.WriteLine($"Наименьшая сумма на строке {indexMinSum}");
+    System.Console.WriteLine($"мин {iMin} + {sum}");
 
     return matrix;
 }
 
-int MinRow (int[] sumRowArr)             // метод минимальный элемент массива
-{    
-    int imin = 0;
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {  
-        if (array[imin] > array[i])
-        {
-            imin = i;
-        }
-    }
-     return array[imin];             // return выводит зачение которое получил метод
-}
+// int MinRow(int[] sumRowArr)
+// {
+//     int result = sumRowArr[0];
+//     int iMin = 0;
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         if (sumRowArr[iMin] > sumRowArr[i])
+//         {
+//             result = sumRowArr[iMin];
+//             iMin = i;
+//         }
+//     }
+//     Console.WriteLine($"Наименьшая сумма на строке {iMin}");
+
+//     return iMin;
+// }
 
 int[,] FillMatrix(int rows, int colums)
 {
