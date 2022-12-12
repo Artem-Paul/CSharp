@@ -19,7 +19,7 @@ int[,,] FillMatrix(int rows, int colums, int deep)
         {
             for (int k = 0; k < matrix.GetLength(2); k++)
             {
-                matrix[i, j, k] = rnd.Next(10, 99);
+                matrix[i, j, k] = rnd.Next(10, 99);      // инфу как сделать неповторяющийся рэндом не нашел :(
             }
         }
     }
