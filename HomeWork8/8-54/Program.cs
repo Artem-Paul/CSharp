@@ -15,6 +15,7 @@ DecreasingRow(matrix);
 System.Console.WriteLine("Упорядоточен по убыванию:");
 PrintMatrix(matrix);
 
+
 void DecreasingRow(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
