@@ -46,6 +46,7 @@ int[,] FillMatrix(int rows, int colums)
             matrix[i, j] = rnd.Next(1, 10);
         }
     }
+
     return matrix;
 }
 
